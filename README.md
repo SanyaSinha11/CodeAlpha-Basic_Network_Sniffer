@@ -6,7 +6,7 @@
 
 This project is a basic network sniffer implemented in Python. It captures and displays various network packets transmitted over the network. The sniffer is designed to run on Windows and Unix-based systems and provides detailed information about Ethernet and IPv4 packets.
 
-## Features
+## Functions
 
 - Captures Ethernet frames and extracts MAC addresses.
 - Parses IPv4 packets and displays header information.
@@ -45,6 +45,20 @@ The script outputs information about captured Ethernet and IPv4 packets in the f
 To stop the packet capturing, press `Ctrl + C`.
 
 ## Code Explanation
+
+### Libraries Used
+
+1. **socket**:
+    - Provides access to the BSD socket interface. This is used to create raw sockets and manage network connections.
+    
+2. **struct**:
+    - Provides functionality for working with C-style data structures. This is used to unpack binary data from network packets.
+    
+3. **os**:
+    - Provides a way of using operating system-dependent functionality. This is used to check the operating system and enable promiscuous mode on Unix-based systems.
+    
+4. **subprocess**:
+    - Allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. This is used to enable promiscuous mode on Unix-based systems.
 
 ### Main Functions
 
